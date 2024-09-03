@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="customerPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.CustomerInterfaceController">
+   <children>
+      <AnchorPane prefHeight="406.0" prefWidth="219.0">
+         <children>
+            <ImageView fitHeight="406.0" fitWidth="338.0" layoutX="-86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@z.loginBackground.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="49.0" layoutY="29.0" text="Customer">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="25.0" layoutY="148.0" mnemonicParsing="false" onAction="#customerHomeButton" prefHeight="25.0" prefWidth="169.0" text="Home" textAlignment="CENTER">
+               <font>
+                  <Font name="Bookman Old Style" size="12.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Button>
+            <Button layoutX="25.0" layoutY="198.0" mnemonicParsing="false" onAction="#customerDepositeButton" prefHeight="25.0" prefWidth="169.0" text="Deposit Money">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font name="Bookman Old Style" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="25.0" layoutY="252.0" mnemonicParsing="false" onAction="#customerWithdrawButton" prefHeight="25.0" prefWidth="169.0" text="Withdraw Money">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font name="Bookman Old Style" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="41.0" layoutY="374.0" mnemonicParsing="false" onAction="#logoutButton" text="Logout" textAlignment="CENTER">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font name="Bookman Old Style" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="24.0" fitWidth="23.0" layoutX="14.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@z.logoutIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="17.0" fitWidth="23.0" layoutX="73.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@z.homeIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="11.0" layoutX="53.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@z.plusIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="41.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@z.minusIcon.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="25.0" layoutY="303.0" mnemonicParsing="false" onAction="#onlinePurchaceButton" prefHeight="25.0" prefWidth="169.0" text="Online Purchace">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font name="Bookman Old Style" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="41.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@z.onlinePurchaceIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="67.0" fitWidth="71.0" layoutX="76.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@z.customerCoverIcon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="11.0" layoutY="14.0" text="MY COPY" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="homePage" layoutX="219.0" prefHeight="406.0" prefWidth="473.0">
+         <children>
+            <Label layoutX="77.0" layoutY="70.0" text="Welcome Back Customer!">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="203.0" fitWidth="236.0" layoutX="135.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@z.bankIcon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="depositPage" layoutX="219.0" prefHeight="406.0" prefWidth="473.0" visible="false">
+         <children>
+            <Label layoutX="52.0" layoutY="102.0" text="Blanace:">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="144.0" layoutY="23.0" text="Deposit Money">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="depositBalance" editable="false" layoutX="128.0" layoutY="97.0" prefHeight="25.0" prefWidth="169.0" />
+            <Button layoutX="330.0" layoutY="117.0" mnemonicParsing="false" onAction="#depositeUpdate" prefHeight="37.0" prefWidth="71.0" text="Update">
+               <font>
+                  <Font name="Bookman Old Style" size="12.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Button>
+            <Label layoutX="42.0" layoutY="254.0" text="Deposit Amount:">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="52.0" layoutY="158.0" text="Level:">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="depositLevel" editable="false" layoutX="128.0" layoutY="153.0" prefHeight="25.0" prefWidth="169.0" />
+            <TextField fx:id="depositAmount" layoutX="181.0" layoutY="249.0" prefHeight="25.0" prefWidth="213.0" promptText="Enter Amount" />
+            <Button layoutX="301.0" layoutY="311.0" mnemonicParsing="false" onAction="#depositButton" prefHeight="51.0" prefWidth="99.0" text="Deposit">
+               <font>
+                  <Font name="Bookman Old Style" size="12.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="withdrawPage" layoutX="219.0" prefHeight="406.0" prefWidth="473.0" visible="false">
+         <children>
+            <Label layoutX="67.0" layoutY="106.0" text="Blanace:">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="132.0" layoutY="36.0" text="Withdraw Money">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="withdrawBalance" editable="false" layoutX="141.0" layoutY="101.0" prefHeight="25.0" prefWidth="169.0" />
+            <Label layoutX="83.0" layoutY="163.0" text="Level:">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="withdrawLevel" editable="false" layoutX="141.0" layoutY="158.0" prefHeight="25.0" prefWidth="169.0" />
+            <Button layoutX="340.0" layoutY="127.0" mnemonicParsing="false" onAction="#withdrawUpdate" prefHeight="37.0" prefWidth="71.0" text="Update">
+               <font>
+                  <Font name="Bookman Old Style" size="12.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Button>
+            <Button layoutX="311.0" layoutY="321.0" mnemonicParsing="false" onAction="#withdrawButton" prefHeight="51.0" prefWidth="99.0" text="Withdraw">
+               <font>
+                  <Font name="Bookman Old Style" size="12.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Button>
+            <Label layoutX="52.0" layoutY="264.0" text="Withdraw Amount:">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="withdrawAmount" layoutX="191.0" layoutY="259.0" prefHeight="25.0" prefWidth="213.0" promptText="Enter Amount" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="onlinePage" layoutX="219.0" prefHeight="406.0" prefWidth="473.0" visible="false">
+         <children>
+            <Label layoutX="132.0" layoutY="22.0" text="Online Purchase">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="headphone" layoutX="307.0" layoutY="175.0" mnemonicParsing="false" onAction="#onlinePurchase" text="Headphone">
+               <effect>
+                  <Glow />
+               </effect>
+            </Button>
+            <Button fx:id="pens" layoutX="122.0" layoutY="77.0" mnemonicParsing="false" onAction="#onlinePurchase" text="Pens">
+               <effect>
+                  <Glow />
+               </effect>
+            </Button>
+            <Button fx:id="paper" layoutX="120.0" layoutY="127.0" mnemonicParsing="false" onAction="#onlinePurchase" text="Paper">
+               <effect>
+                  <Glow />
+               </effect>
+            </Button>
+            <Button fx:id="laptop" layoutX="310.0" layoutY="127.0" mnemonicParsing="false" onAction="#onlinePurchase" text="Laptop">
+               <effect>
+                  <Glow />
+               </effect>
+            </Button>
+            <Button fx:id="shirt" layoutX="120.0" layoutY="175.0" mnemonicParsing="false" onAction="#onlinePurchase" text="Shirt">
+               <effect>
+                  <Glow />
+               </effect>
+            </Button>
+            <Button fx:id="shoes" layoutX="308.0" layoutY="77.0" mnemonicParsing="false" onAction="#onlinePurchase" text="Shoes">
+               <effect>
+                  <Glow />
+               </effect>
+            </Button>
+            <Label layoutX="76.0" layoutY="82.0" text="\$5.00">
+               <font>
+                  <Font name="Bookman Old Style" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="132.0" text="\$2.00">
+               <font>
+                  <Font name="Bookman Old Style" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="69.0" layoutY="180.0" text="\$15.00">
+               <font>
+                  <Font name="Bookman Old Style" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="257.0" layoutY="82.0" text="\$45.00">
+               <font>
+                  <Font name="Bookman Old Style" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="253.0" layoutY="132.0" text="\$5,000">
+               <font>
+                  <Font name="Bookman Old Style" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="253.0" layoutY="180.0" text="\$2,500">
+               <font>
+                  <Font name="Bookman Old Style" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="53.0" layoutY="224.0" text="Account Balance:">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="onlineBalance" editable="false" layoutX="180.0" layoutY="219.0" prefHeight="25.0" prefWidth="169.0" />
+            <Label layoutX="61.0" layoutY="260.0" text="Account Level:">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="onlineLevel" editable="false" layoutX="180.0" layoutY="255.0" prefHeight="25.0" prefWidth="169.0" />
+            <Label layoutX="24.0" layoutY="309.0" text="Purchace Amount:">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="purchaceAmount" editable="false" layoutX="168.0" layoutY="304.0" prefHeight="25.0" prefWidth="169.0" />
+            <Label layoutX="78.0" layoutY="344.0" text="Level Tax:">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="levelTax" editable="false" layoutX="168.0" layoutY="339.0" prefHeight="25.0" prefWidth="69.0" />
+            <Label layoutX="112.0" layoutY="376.0" text="Total:">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="totalAmount" editable="false" layoutX="168.0" layoutY="371.0" prefHeight="25.0" prefWidth="169.0" />
+            <Button layoutX="356.0" layoutY="318.0" mnemonicParsing="false" onAction="#purchaseButton" prefHeight="51.0" prefWidth="82.0" text="Purchase">
+               <effect>
+                  <Glow />
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

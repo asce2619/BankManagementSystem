@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="146.0" prefWidth="402.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.LoginErrorController">
+   <children>
+      <Label layoutX="135.0" layoutY="28.0" text="Adding Customer Failed!" textAlignment="CENTER">
+         <font>
+            <Font name="Bookman Old Style" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="192.0" layoutY="73.0" text="User already exists">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="224.0" layoutY="104.0" text="Try Again" />
+      <ImageView fitHeight="100.0" fitWidth="101.0" layoutX="14.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@z.errorIcon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
