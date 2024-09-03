@@ -7,6 +7,7 @@
 ### Table of Contents
 - [General Information](https://github.com/asce2619/BankManagementSystem#general-information)
 - [Project Report](https://github.com/asce2619/BankManagementSystem#project-report)
+- [Application Used](https://github.com/asce2619/BankManagementSystem#application-used)
 - [Interface Preview](https://github.com/asce2619/BankManagementSystem#interface-preview)
     - [Manager Interface](https://github.com/asce2619/BankManagementSystem#manager-interface)
     - [Customer Interface](https://github.com/asce2619/BankManagementSystem#customer-interface)
@@ -17,6 +18,9 @@ This project required the creation of a simple Bank Account Application. The app
 ## Project Report
 The following link leads to the course report, which also showcases the Use Case and Class diagram created during the planning phase. 
 [Project Report](https://github.com/asce2619/BankManagementSystem/blob/master/CO528_%20Bank%20Application%20Report.pdf)
+
+## Application Used
+This project was developed using JavaFX through Netbeans, with the graphical user interface (GUI) created using Scenebuilder.
 
 ## Interface Preview
 
