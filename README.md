@@ -2,7 +2,7 @@
 ### COE528: Object-Oriented Engineering Analysis and Design
 #### Winter 2024 Term Project
 
-> Bank Management System
+> A user-friendly bank management system, designed to streamline banking operations for both customers and managers.
 
 ### Table of Contents
 - [General Information](https://github.com/asce2619/BankManagementSystem#general-information)
